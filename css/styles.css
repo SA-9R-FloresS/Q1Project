@@ -1,0 +1,220 @@
+/*	FONTS	*/
+@font-face {
+	font-family: 'Fredoka';
+	src: url('fonts/Fredoka/Fredoka-VariableFont_wdth,wght.ttf')
+}
+
+/* HTML */
+:root {
+	font-size: 16px;
+	font-family: 'Fredoka';
+	font-weight: 600;
+	--text-color: #36454F;
+	--navbar-bg: #924F87;
+	--hover-bg: rgba(255, 212, 108, 0.75);
+	--transition-speed: 500ms;
+}
+
+body {
+	color: var(--text-color);
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+/*	NAVBAR	*/
+.navbar {
+	width: 5rem;
+	height: 100vh;
+	position: fixed;
+	background-color: var(--navbar-bg);
+	transition: width 500ms ease;
+	overflow: scroll;
+	font-weight: ;
+}
+.navbar:hover {
+	width: 12.5rem;
+	display: block;
+}
+.nav-layout {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.nav-tab {
+	width: 100%;
+}
+.nav-tab:last-child {
+	margin-top: auto;
+}
+.nav-link {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	text-decoration: none;
+	color: white;
+	filter: opacity(0.8);
+}
+.nav-link svg {
+	min-width: 2rem;
+	margin: 0 1.5rem;
+	width: 2rem;
+}
+.nav-link:hover {
+	filter: opacity(1);
+	background-color: var(--hover-bg);
+	text-transform: uppercase;
+}
+.nav-text {
+	display: none;
+	margin-left: 1.2rem;
+	display: block;
+}
+
+/* HOME */
+.h-header {
+	margin-left: 5rem;
+	background: url(images/the-theatre-at-solaire.jpg);
+	background-size: cover;
+	text-align: center;
+}
+#h-logo {
+	margin-top: -3rem;
+	margin-bottom: -10rem;
+	width: 500px;
+	height: 500px;
+}
+.h-header h3 {
+	margin-left: 4rem;
+	text-align: left;
+	font-size: 5rem;
+	font-weight: 525;
+	text-transform: uppercase;
+	color: #F87979;
+	text-shadow: 1px 1px 4px #bd2a2a,
+	-1px 1px 4px #bd2a2a,
+    -1px -1px 4px #bd2a2a,
+    1px -1px 4px #bd2a2a;
+}
+.h-header p {
+	margin: -5rem 0 14.5rem 4rem;
+	text-align: left;
+	font-size: 2rem;
+	font-weight: 525;
+	color: white;
+	text-shadow: 1px 1px 2px #bd2a2a,
+	-1px 1px 2px #bd2a2a,
+	-1px -1px 2px #bd2a2a,
+	1px -1px 2px #bd2a2a;
+}
+.about {
+	background-size: cover;
+	background: url(https://images.squarespace-cdn.com/content/v1/636b5e138fd7c9613e2a8b61/607923df-b608-45c3-9d08-70956d219426/MSB+2022+%286%29.jpg);
+}
+.about h3 {
+	margin-top: 14rem;
+	margin-right: 4rem;
+	text-align: right;
+	font-size: 5rem;
+	font-weight: 525;
+	text-transform: uppercase;
+	color: #ffd46c;
+	text-shadow: 1px 1px 4px #ffb606,
+	-1px 1px 4px #ffb606,
+    -1px -1px 4px #ffb606,
+    1px -1px 4px #ffb606;
+}
+.about p {
+	margin: -5rem 4rem 14.5rem 20rem;
+	text-align: right;
+	font-size: 2rem;
+	font-weight: 525;
+	color: white;
+}
+
+.products {
+	background-color: #fac2f1;
+}
+.products h3 {
+	margin-left: 8rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	font-size: 5rem;
+	font-weight: 525;
+	text-transform: uppercase;
+	color: #A9609D;
+	text-shadow: 1px 1px 4px var(--navbar-bg),
+	-1px 1px 4px var(--navbar-bg),
+    -1px -1px 4px var(--navbar-bg),
+    1px -1px 4px var(--navbar-bg);
+}
+.products-sample {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.products-sample img {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	margin: 30px;
+}
+.products-sample-text {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	margin: 10rem;
+	margin-top: -3.5rem;
+}
+
+/* USER */
+#u-logo {
+	margin-top: -4rem;
+	margin-bottom: -10rem;
+	margin-left: 10rem;
+	width: 500px;
+	height: 500px;
+}
+.login {
+	display: flex;
+	font-size: 1.5rem;
+}
+.login label {
+	color: var(--navbar-bg);
+	text-shadow: 1px 1px 4px #fff;
+}
+.login input {
+	border: 1px solid var(--text-color);
+	border-radius: 20px;
+	padding: 5px;
+	width: 150px;
+}
+.login-left {
+	margin-left: 15rem;
+}
+.login-right {
+	margin-left: 5rem;
+}
+#checkbox {
+	margin-left: 15rem;
+}
+#u-button {
+	margin-left: 15rem;
+	width: 25rem;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	font-family: 'Fredoka';
+	font-weight: 600;
+	font-size: 20px;
+	color: #bd2a2a;
+	text-shadow: 1px 1px 4px #f4db9e;
+	border: 2px solid #bd2a2a;
+	border-radius: 10px;
+	background-color: white;
+}
